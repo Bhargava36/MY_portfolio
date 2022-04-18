@@ -85,6 +85,7 @@ nav{
     font-size: 15px;
     text-align: justify;
     text-justify: inter-word;
+    z-index: -1;
 }
 p{
     text-align: justify;
