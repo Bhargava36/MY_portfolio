@@ -67,7 +67,7 @@ nav{
     color: #a53d58;
 }
 .profile-img{
-    background-image: url("dots.svg");
+    background-image: url('MY_portfolio/assets/images/dots.svg');
     background-repeat: no-repeat;
     background-position: right top;
 }
@@ -127,7 +127,7 @@ p{
     margin-top: 50px;
 }
 .profile-about{
-    background-image: url("dots.svg");
+    background-image: url('MY_portfolio/assets/images/dots.svg');
     background-repeat: no-repeat;
     background-position: left bottom;
 }
