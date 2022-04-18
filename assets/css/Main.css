@@ -1,0 +1,231 @@
+body::-webkit-scrollbar{
+    width: 0px;
+}
+body{
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+}
+nav .brand{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: #a6d976 !important;
+    font-size: 2rem;
+}
+nav .brand span{
+    color: #0093d5
+}
+nav{
+    z-index: 1;
+}
+.nav-item{
+    border-bottom: 3px solid transparent;
+    font-family: New Century Schoolbook, TeX Gyre Schola, serif;
+    font-size: 18px;
+}
+.nav-item:hover{
+    border-bottom:3px solid black;
+}
+
+
+/*landing page*/
+.demo{
+    height: 15vh;
+}
+.row .brand{
+   font-family: 'Times New Roman', Times, serif; 
+    line-height: 1;
+    color: #a53d58;
+}
+.row .brand span{
+    font-size: 5rem;
+}
+
+.row .brand span span{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    color: #0093d5;
+    font-size: 4rem;
+    
+}
+.land{
+   /* margin-top: 130px;*/
+    background-position: center;
+    background-size: cover;
+    /* background-image: url("1.png");*/
+}
+.download-cv{
+    background-color: #a53d58;
+    border: 3px solid #a53d58;
+    color:white;
+}
+.download-cv a{
+    text-decoration: none;
+    color: white;
+}
+.download-cv a:hover{
+    color: #a53d58;
+}
+.download-cv:hover{
+    background-color: white;
+    color: #a53d58;
+}
+.profile-img{
+    background-image: url("C:/Users/bharg/OneDrive/Desktop/My portfolio/assets/images/dots.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.image{
+    height: 500px;
+    margin-top: 55px;
+    width:70%;
+}
+.rev-image{
+    height: 500px;
+    margin-top: 55px;
+    width: 70%;
+}
+.about{
+    font-size: 15px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+p{
+    text-align: justify;
+    text-justify: inter-word;
+}
+.social{
+    text-decoration: none;
+    color: #0093d5;
+}
+@media (max-width:780px){
+    .row .brand span{
+        font-size: 3rem;
+    }
+    .image{
+        width:100%;
+    }
+    .rev-image{
+        width: 100%;
+    }
+    .about-section{
+        margin-top: 0px;
+    }
+}
+/*.name{
+    background-image: url("C:/Users/bharg/OneDrive/Desktop/My portfolio/assets/images/1.png");
+    background-size: cover;
+    background-position: center;
+}*/
+
+/*end of land page*/
+/*about*/
+.about-section{
+    
+    margin-top: 100px;
+}
+.display-lines{
+    display: inline-block;
+}
+.head{
+    margin-top: 50px;
+}
+.profile-about{
+    background-image: url("C:/Users/bharg/OneDrive/Desktop/My portfolio/assets/images/dots.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.lines{
+    width: 50px;
+    height: 10px;
+    margin-top: 13px;
+    border-radius: 20px;
+    background-color: #a53d58;
+}
+.who-am-i{
+    letter-spacing: 3px;
+}
+.ser{
+    border-bottom: 5px solid #a53d58;
+    color: #a53d58;
+    transition: transform .2s;
+}
+.pro-done{
+    background-color: #a53d58;
+    border-bottom: 5px solid #0093d5;
+    color: white;
+    transition: transform .2s;
+}
+.pro-done:hover{
+    background-color: white;
+    border-bottom: 5px solid #a53d58;
+    color: #a53d58;
+    transform: scale(1.1);
+}
+.ser:hover{
+    border-bottom: 5px solid #0093d5;
+    color: white;
+    transform: scale(1.1);
+    z-index: 1;
+    background-color: #a53d58;
+}
+/*end of about*/
+section{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section:nth-of-type(even){
+    background: #ffd4d4;
+}
+
+/*progress bar*/
+.html-progress{
+    background-color: #0093d5;
+}
+.progress-bars{
+    padding: 30px;
+    transition: transform .2s;
+}
+.progress-bars:hover{
+    background-color: #a53d58;
+    color: white;
+    transform: scale(1.1);
+}
+.projects{
+    transition: transform .2s;
+   
+}
+.projects:hover{
+    z-index: 1;
+    transform: scale(1.1);
+    background-color: #a53d58;
+    color: white;
+}
+footer .brand{
+    font-family: Brush Script MT, Brush Script Std, cursive !important;
+    color: #a6d976 !important;
+    font-size: 4rem;
+}
+footer .brand span{
+    color: #0093d5;
+    font-size: 4rem !important;
+}
+.copy-right{
+    font-size: 1.3rem;
+}
+.copy-right a{
+    text-decoration: none;
+    color: #a53d58;
+    font-weight: 900;
+}
+
+/*SERVICES*/
+.services{
+    border-bottom: 5px solid #a53d58;
+    transition: transform .2s;
+}
+.services:hover{
+    background-color: #a53d58;
+    color: white;
+    z-index:1;
+    border-bottom: 5px solid #0093d5;
+    transform: scale(1.1);
+}
