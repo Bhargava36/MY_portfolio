@@ -13,6 +13,14 @@
     <!--Js animations-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>MY_PORTFOLIO</title>
+    <style>
+        #more{
+            display: none;
+        }
+        #more1{
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <nav data-aos="slide-down" data-aos-duration="1000" class="navbar navbar-expand-md navbar-light fixed-top bg-white px-sm-5 shadow py-3">
@@ -294,8 +302,9 @@
                      </div>
                      <div class="card-body">
                        <h3>Learning Management System</h3>
-                       <p>Every year domain training is conducted by SAC . Last year when COVID 19 hit we were in our homes and all the training had happened through online mode . Every week we were assigned some tasks . To submit those tasks , we were given Google forms but it's very hard to estimate how many students have submitted how many tasks and who are doing very well and who are not and at the same time students are unable to know their feedback of the exams or tasks like remarks . All the evaluations had happened manually till now . Another important point is that , every student will have so many doubts in their mind like some need some extra information , some need resources , some need to get clarified their doubts . But every one cannot interact with their respective mentors directly like some freely ask their doubts some can't . And some are very excited to know their performance . So to put a full stop to all these scenarios we have created a portal called LMS portal . Learning management system portal is a platform which acts as a bridge between the students and mentors . The functionalities includes proper login system  for mentors , admins and learners , support page which is a public page where any one can raise their doubts and any one can answer that queries if they know . Resources page where all the resources related to that training are available , leaderboard where top 3 students are shown above and remaining students are listed according to their performance , lastly profile page we have created profile page where students can upload their photo , personal details , educational background , experience if any , skills , achievements , certifications there will be public profile where students cannot edit their details and all and also there will be personal profile page where students can edit or delete their profile .</p>
-                     </div>
+                       <p>Every year domain training is conducted by SAC . Last year when COVID 19 hit we were in our homes and all the training had happened through online mode.<span id="dots">...</span><span id="more">Every week we were assigned some tasks . To submit those tasks , we were given Google forms but it's very hard to estimate how many students have submitted how many tasks and who are doing very well and who are not and at the same time students are unable to know their feedback of the exams or tasks like remarks . All the evaluations had happened manually till now . Another important point is that , every student will have so many doubts in their mind like some need some extra information , some need resources , some need to get clarified their doubts . But every one cannot interact with their respective mentors directly like some freely ask their doubts some can't . And some are very excited to know their performance . So to put a full stop to all these scenarios we have created a portal called LMS portal . Learning management system portal is a platform which acts as a bridge between the students and mentors . The functionalities includes proper login system  for mentors , admins and learners , support page which is a public page where any one can raise their doubts and any one can answer that queries if they know . Resources page where all the resources related to that training are available , leaderboard where top 3 students are shown above and remaining students are listed according to their performance , lastly profile page we have created profile page where students can upload their photo , personal details , educational background , experience if any , skills , achievements , certifications there will be public profile where students cannot edit their details and all and also there will be personal profile page where students can edit or delete their profile .</span></p>
+                       <button class="btn download-cv mt-2" onclick="myFunction()" id="myBtn">Read more...</button>
+                    </div>
                    </div>
                 </div>
                 <div class="col-md-4">
@@ -305,7 +314,8 @@
                     </div>
                     <div class="card-body">
                       <h3>Grievance Redressal Portal</h3>
-                      <p>There is one committee called grievance commitee  in our college which redresses the  grievances addressed by student /parent/faculty.since we have grievance cell / faculty feedback tab in our college portal,there have not been any functionalities regarding mail verification , logins ,response,overview of grievances etc . we,therefore implemented the functionalities so that it will be easy for the commitee to address/ reject the grievances based on the criteria and type of grievance .once an account is created ,an account activation mail is sent to the user with user credentials .user can login in to the site with that credentials and can change the password if he/she wants.We have provided with  5 types of logins :admin, faculty , parent , student and commitee .If a user registered their grievance , based on the grievance category under which it falls, it will be sent to the respective duty head ,head of the commitee and principal through official mail .If it is a valid grievance then the respective grievance member will provide a reply mentioning the time to be solved through mail . Grievances are categorised according to the types . The commitee member can see the grievances for those he is responsible for  after login in with his/her credentials. If the grievance committee came up with a solution , after rectification he /she who is responsible for that duty should put an official mail to the person who addressed the grievance with the provided solution .overview of grievances and list of grievances filtered by monthly /annually as a pdf format are the added functionalities to our portal.</p>
+                      <p>There is one committee called grievance commitee  in our college which redresses the  grievances addressed by student /parent/faculty.since we have grievance cell <span id="dots1">...</span><span id="more1">/ faculty feedback tab in our college portal,there have not been any functionalities regarding mail verification , logins ,response,overview of grievances etc . we,therefore implemented the functionalities so that it will be easy for the commitee to address/ reject the grievances based on the criteria and type of grievance .once an account is created ,an account activation mail is sent to the user with user credentials .user can login in to the site with that credentials and can change the password if he/she wants.We have provided with  5 types of logins :admin, faculty , parent , student and commitee .If a user registered their grievance , based on the grievance category under which it falls, it will be sent to the respective duty head ,head of the commitee and principal through official mail .If it is a valid grievance then the respective grievance member will provide a reply mentioning the time to be solved through mail . Grievances are categorised according to the types . The commitee member can see the grievances for those he is responsible for  after login in with his/her credentials. If the grievance committee came up with a solution , after rectification he /she who is responsible for that duty should put an official mail to the person who addressed the grievance with the provided solution .overview of grievances and list of grievances filtered by monthly /annually as a pdf format are the added functionalities to our portal.</span></p>
+                      <button class="btn download-cv mt-2" onclick="myFunction1()" id="myBtn1">Read more...</button>
                     </div>
                   </div>
                </div>
@@ -449,6 +459,41 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
+    </script>
+    <script>
+        function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+        }
+        
+    </script>
+    <script>
+        function myFunction1() {
+        var dots = document.getElementById("dots1");
+        var moreText = document.getElementById("more1");
+        var btnText = document.getElementById("myBtn1");
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+        }
     </script>
     <!--Adding active class-->
     
