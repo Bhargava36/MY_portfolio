@@ -33,7 +33,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse d-md-flex justify-content-end navbar-collapse " id="navbarTogglerDemo02">
-            <ul class="navbar-nav navigations">
+            <ul class="navbar-nav navigations" id="navitems">
               <li class="nav-item "> <a class="nav-link active" aria-current="page" href="#home">Home</a></li>
               <li class="nav-item "> <a class="nav-link" aria-current="page" href="#about">About</a></li>
               <li class="nav-item "> <a class="nav-link" aria-current="page" href="#education">Education</a></li>
@@ -56,8 +56,12 @@
                             Hi! <br><span>I am <span>Bhargava Naidu Jaddu</span></span>
                         </h1>
                         <h2 class="mb-4"data-aos="slide-down" data-aos-duration="1000">WEB DESIGNER & DEVELOPER</h2>
-                        <p class="mb-4 about"data-aos="slide-down" data-aos-duration="1000">I am passionate about my work. Because I love what I do, I have a steady source of motivation that drives me to do my best. In my last job, this passion led me to challenge myself daily and learn new skills that helped me to do better work. For example, I taught myself how to use Photoshop to improve the quality of our photos and graphics. I soon became the go-to person for any design needs.</p>
-
+                        <p class="mb-4 about"data-aos="slide-down" data-aos-duration="1000">
+                          To showcase my expertise in web development and highlight my technical skills and project experience,
+                           while also providing a glimpse into my professional and personal qualities. Through this portfolio, 
+                           I aim to establish myself as a competent and driven web developer, and attract potential employers
+                            or collaborators who share my passion for innovative and impactful technology solutions
+                        </p>
                         <div class="row mb-4">
                           <div class="col-md-6">
                             <div class="row">
@@ -92,8 +96,14 @@
                   </div>
                   <div class="col-md-7 pt-5 ">
                     <h5 class="who-am-i fw-bold" data-aos="slide-up" data-aos-duration="1000">WHO AM I ?</h5>
-                    <p class=" about" data-aos="slide-up" data-aos-duration="1000">I’m Bhargava Naidu Jaddu. I’m having my B-Tech at ADITYA INSTITUTE OF TECHNOLOGY AND MANAGEMENT (AITAM) in the steam of computer science engineering  at Tekkali.
-                      I am a part of developers club in student activity center in my college and holding the position as a student web developer and currently guiding the juniors as a developers club domain guide. I’m very much fascinated about the websites and web technology.. So I decided to learn about the technology having behind it and work under it. So started learning this web developing through SAC. SAC (student activity center) gives us a lot of tasks which helps in improving our practical skills and knowing the solutions that we face in future software companies.
+                    <p class=" about" data-aos="slide-up" data-aos-duration="1000">
+                      Hi there! My name is Bhargava Naidu Jaddu, and I'm a passionate web developer with a keen eye for detail and a hunger for creating beautiful,
+                       functional websites. I have worked on various projects, including grievance redressal portals, learning management systems, and 
+                       restaurant applications, where I was responsible for designing and implementing user interfaces, developing backend APIs, and optimizing
+                        website performance. As a student web developer at Student Activity Center, I have been able to hone my skills and gain valuable
+                         experience working in a team environment. I pride myself on my ability to communicate effectively with my colleagues, clients,
+                          and end-users to ensure that projects are completed on time and to the highest possible standards. I am always eager to take on
+                           new challenges and learn new technologies to enhance my skills and contribute to the success of my team.
                     </p>
                     <div class="row mt-md-5">
                       <h3 class="mb-4" data-aos="slide-up" data-aos-duration="1000">My interests</h3>
@@ -356,10 +366,19 @@
                         </div>
                         <div class="col-8">
                              <h2>WEB DEVELOPMENT</h2>
-                             <P>Web development refers to building, creating, and an maintaining websites.<br>
-
-                              It includes aspects such as web design, web publishing, web programming, and database management. While the terms "web developer" and "web designer" are often used synonymously, they do not mean the same thing.</P>
-                        </div>
+                             <p class=" about" data-aos="zoom-in" data-aos-duration="1000">
+                               Web development is the process of building and maintaining websites and web applications.
+                               It involves various tasks such as web design, content creation, client-side scripting,
+                                server-side scripting, network security configuration, and database management.
+                                 Web development can range from creating simple static web pages to complex web
+                                  applications with dynamic content, user authentication, and interactive features.
+                                  Web developers use a combination of programming languages, such as HTML, CSS, JavaScript,
+                                   and server-side scripting languages like PHP, Python, or Ruby, to create web pages that
+                                    can be viewed on different devices and platforms. They work closely with web designers
+                                     to ensure the website's visual elements and user experience are optimized for a seamless
+                                      browsing experience.
+                             </p>
+                             </div>
                       </div>
                 </div>
               </div>
@@ -375,10 +394,18 @@
                         </div>
                         <div class="col-8">
                              <h2>WEB DESIGNER</h2>
-                             <P>Web development refers to building, creating, and an maintaining websites.<br>
-
-                              It includes aspects such as web design, web publishing, web programming, and database management. While the terms "web developer" and "web designer" are often used synonymously, they do not mean the same thing.</P>
-                        </div>
+                              <p class=" about" data-aos="zoom-out" data-aos-duration="1000">
+                                Web designing is a creative process of designing and developing the layout and visual
+                               aesthetics of a website. It involves the creation of the website's look and feel, including
+                                the use of color schemes, typography, and graphics. A well-designed website not only looks
+                                 visually appealing but also provides a seamless user experience. Web designing requires a
+                                  combination of technical skills, creativity, and attention to detail. A good web designer
+                                   should have a strong understanding of user behavior, design principles, and industry standards
+                                    to create a website that is visually stunning and easy to use. With the increasing importance
+                                     of the online presence of businesses, web designing has become a crucial component of digital
+                                      marketing and branding strategies.
+                              </p>
+                              </div>
                       </div>
                 </div>
               </div>
@@ -479,6 +506,15 @@
         }
         }
         
+    </script>
+    <script>
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          navLinks.forEach(link => link.classList.remove('active'));
+          this.classList.add('active');
+        });
+      });
     </script>
     <script>
         function myFunction1() {
